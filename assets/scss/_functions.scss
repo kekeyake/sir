@@ -1,0 +1,8 @@
+$viewport : 360;
+$pixels : 0;
+
+@function vw($pixels) {
+    @return #{
+        ($pixels * 100) / $viewport
+    }vw;
+}

@@ -1,0 +1,209 @@
+@charset "UTF-8";
+@import 'functions';
+.order-page {
+    &.new {
+        max-width: 1280px;
+        padding:0;
+        button {white-space: nowrap;}
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+        }
+        .step-top {
+            display: flex;
+            padding:36px 0 28px;
+        }
+        .select-wrap {
+            padding:0;
+            display: flex;
+            .__btn {                
+                border: 1px solid #E0E0E0;
+                border-radius: 2px;
+                font-size: 12px;
+                color:#000;
+                padding:6px 15px;
+                margin-left: 12px;
+                &:hover {
+                    color:#fff;
+                }
+            }
+        }
+        .result-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: "Roboto", "Noto Sans CJK KR WEB",sans-serif;
+            margin-top: 40px;
+            padding: 38px 80px;
+            border: 1px solid #7F74D8;
+            box-sizing: border-box;
+            border-radius: 2px;
+            .sum-box {
+                display: flex;
+                align-items: center;
+                span {
+                    font-size: 18px;
+                    margin:0 34px;
+                    font-weight: 700;
+                }
+                dl {
+                    text-align: center;
+                    width: 190px;                    
+                    dt {
+                        font-size: 12px;
+                    }
+                    dd {
+                        font-size: 18px;
+                        margin-top: 4px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .total-price-box {
+                text-align: right;
+                padding:0;
+                .txt {                    
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 18px;
+                        color:#000;
+                        font-weight: 700;
+                    }
+                    b {
+                        font-size: 24px;
+                        color: #2517B5;
+                        font-weight: 900;
+                        margin-left: 8px;
+                    }
+                }
+                .stxt {
+                    line-height: 17px;
+                    span {
+                        font-size: 12px;
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+        .btn-wrap {
+            display: flex;
+            margin-top: 40px;
+            .__buy {
+                margin-left: auto;
+                font-size: 16px;
+                width: 305px;
+                height: 60px;                
+                border-radius: 4px;
+                font-weight: 500;
+                color:#fff;
+                background: #2A18BD;
+                display: inline-block;
+
+            }
+        }
+    }
+    
+}
+
+/* is mobile */
+@media (max-width: 768px) {
+    .order-page {
+        &.new {
+            overflow:hidden;
+            padding:0 vw(20);
+
+
+            .result-price {
+                display: block;
+                align-items: center;
+                font-family: "Roboto", "Noto Sans CJK KR WEB",sans-serif;
+                margin-top: 40px;
+                padding: 0;
+                border: 0 solid #7F74D8;
+                border-top: vw(10) solid #F9F9F9;
+                box-sizing: border-box;
+                border-radius: 2px;
+                position: relative;
+                &::after {
+                    content: '';
+                    transform: translateX(-50%);
+                    position: absolute;
+                    top:vw(-10);
+                    left: 50%;
+                    width: 200%;
+                    height: vw(10);
+                    background: #F9F9F9;;
+                }
+                .sum-box {
+                    display: block;
+                    padding:vw(26) 0 vw(34);
+                    span {
+                        display: none;
+                    }
+                    dl {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 100%;                    
+                        margin-top: vw(10);
+                        line-height: vw(21);
+                        dt {
+                            font-size: vw(16);
+                        }
+                        dd {
+                            font-size: vw(18);
+                            margin-top: 0;
+                        }
+                        &:first-child {
+                            margin-top: 0;
+                        }
+                    }
+                }
+                .total-price-box {
+                    border-top:1px solid #EAEAEA;
+                    text-align: right;
+                    padding:vw(25) 0;
+                    .txt {                    
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        span {
+                            font-size: vw(16);
+                            color: #2517B5;
+                            font-weight: 700;
+                        }
+                        b {
+                            font-size: vw(18);
+                            color:#000;
+                            
+                            font-weight: 900;
+                            margin-left: 8px;
+                        }
+                    }
+                    .stxt {
+                        margin: vw(8) 0 0 auto;
+                        line-height: vw(17);
+                        display: inline-flex;
+                        align-items: center;
+                        span {
+                            font-size: vw(12);
+                            margin-left: vw(7);
+                        }
+                        img {
+                            width: vw(11);
+                        }
+                    }
+                }
+            }
+            .btn-wrap {
+                margin-top: 0;
+                .__buy {
+                    font-size: vw(16);
+                    width: 100%;
+                    height: vw(44);                
+                }
+            }
+        }        
+    }
+}
