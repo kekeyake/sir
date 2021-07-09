@@ -915,100 +915,324 @@
                             <button type="button" class="__btn">견적서 출력</button>
                         </div>
                     </div>
-                        <!-- 장바구니 상품리스트 시작 -->
-                    <div class="table1 type1">
+                    <!-- 장바구니 상품리스트 시작 -->
+                    <div class="tbl-wrap">
                         <table>
+                            <colgroup>
+                                <col class="th-first">
+                                <col class="th-middle">
+                                <col class="th-last">
+                            </colgroup>
                             <thead>
-                            <tr>
-                                <th>
-                                <span class="form-element">
-                                    <input type="checkbox" id="allCheck-1" class="checkbox gd_checkbox_all" data-target-id="cartSno1_" data-target-form="#frmCart" checked="checked">
-                                    <label for="allCheck-1" class="check-s on">전체선택</label>
-                                </span>
-                                </th>
-                                <th>상품/옵션 정보</th>
-                                <th>수량</th>
-                                <th>상품금액</th>
-                                <th>할인/적립</th>
-                                <th>합계금액</th>
-                                <th>배송비</th>
-                            </tr>
+                                <tr>
+                                    <th>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c1">
+                                            <label for="c1"></label>
+                                        </span>
+                                    </th>
+                                    <th>
+                                        <div class="list-tit">
+                                            <span>상품 및 수량</span>
+                                            <span>수량</span>
+                                            <span>상품 금액</span>
+                                        </div>                                        
+                                    </th>
+                                    <th>
+                                        <span>합계금액</span>
+                                    </th>
+                                </tr>
                             </thead>
                             <tbody>
+                                <!-- for loop -->
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c2">
+                                            <label for="c2"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{숙성한우 선물세트 줄넘김넘김 줄넘김 줄넘김}}}</p>
+                                                    <p class="pro-set">{{세트}}:{{플래티넘B}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅁㅁㅁ}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅇㅇㅇ}}</p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <span>
+                                                    <input type="number" value="00">
+                                                    <button>수량</button>
+                                                </span>
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c3">
+                                            <label for="c3"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{숙성한우 선물세트}}}</p>
+                                                    <p class="pro-set">{{세트}}:{{플래티넘B}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅁㅁㅁ}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅇㅇㅇ}}</p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <span>
+                                                    <input type="number" value="00">
+                                                    <button>수량</button>
+                                                </span>
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
 
-                            <tr>                                    
-                                <td rowspan="1" class="ta-c cb-array">
-                                <span class="form-element">
-                                    <input type="checkbox" name="cartSno[]" id="cartSno1_530" value="530" class="checkbox" checked="checked" data-price="101000" data-mileage="0" data-goodsdc="0" data-memberdc="0" data-coupondc="0" data-possible="y"/>
-                                    <label for="cartSno1_530" class="check-s on">선택</label>
-                                </span>
-                                </td>
-                                <td class="gi this-product">
-                                    <span><a href="../goods/goods_view.php?goodsNo=1000000293"><img src="http://cleaver2.godomall.com/data/goods/21/04/17/1000000293/1000000293_list_047.jpg" width="40" alt="숙성한우 선물세트" title="숙성한우 선물세트" class="middle" class="imgsize-s" /></a></span>
-                                    <div>
-                                        
-                                        <a href="../goods/goods_view.php?goodsNo=1000000293">숙성한우 선물세트</a>
-                                        
-                                        
-                                        <dl>
-                                            <dt>세트 :</dt>
-                                            <dd>레드 A 1.0kg
-                                                (+1,000원)
-                                            </dd>
-                                        </dl>
+                                            <ul class="product-add">
+                                                <li>
+                                                    <span class="add-name">추가 상품</span>
+                                                    <span class="add-info">{{고급 보자기 추가}}</span>
+                                                    <span class="add-count">{{N33}}개</span>
+                                                    <span class="add-price">{{252,000}}원</span>
+                                                </li>                                                
+                                                <li>
+                                                    <span class="add-name">추가 상품</span>
+                                                    <span class="add-info">{{고급 보자기 추가}}</span>
+                                                    <span class="add-count">{{N}}개</span>
+                                                    <span class="add-price">{{25,000}}원</span>
+                                                </li>                                                
+                                            </ul>
 
-                                        <dl>
-                                            <dt>편지 이름 각인 :</dt>
-                                            <dd>test
-                                            </dd>
-                                        </dl>
+                                            <div class="reserved-delivery">
+                                                <button class="btn-reserved">예약 배송일 지정하기</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c4">
+                                            <label for="c4"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{옵션 없는 상품}}</p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <span>
+                                                    <input type="number" value="00">
+                                                    <button>수량</button>
+                                                </span>
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c5">
+                                            <label for="c5"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{샤토브리앙}}</p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <span>
+                                                    <input type="number" value="00">
+                                                    <button>수량</button>
+                                                </span>
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
 
-                                        <dl>
-                                            <dt>
-                                                <a href="#reservationDateOptionLayer" class="btn-open-layer btn-option-layer normal-btn small1 btn-op" data-goodsno="1000000293" data-sno="530" >
-                                                    <em>예약 배송 가능 ></em>
-                                                </a>
-                                            </dt>
-                                        </dl>
-                                        
-                                    </div>
-                                </td>
-                                <td class="ta-c count this-product">
-                                    <input type="text" name="goodsCnt[]" value="1" title="수량" class="text" data-stock-fl="y"  data-total-stock="5"  data-min-order-cnt="1"  data-max-order-cnt="10" data-sales-unit="1" data-change-before-value="1" data-default-goods-cnt="1" data-goods-key="0" data-goods-no="1000000293" data-goods-nm="숙성한우 선물세트" data-option-nm="레드 A 1.0kg" data-fixed-sales="option" data-fixed-order-cnt="option" onchange="input_count_change(this,'1');return false;" />
-                                    <button type="button" class="normal-btn small1 js-goods-cnt-change" data-sno="530" data-goodsno="1000000293"><em>수정</em></button>
-                                </td>
-                                <td class="ta-c this-product">
-                                    <strong class="price">101,000원 </strong>
-                                    <p class="add_currency"></p>
-                                </td>
-                                <td rowspan="1" class="benefits">
-                                </td>
-                                <td rowspan="1" class="ta-c">
-                                    <strong class="price">101,000원</strong>
-                                    <p class="add_currency"></p>
-                                </td>
-                                <td rowspan="2" class="ta-c">
-                                <span class="c-gray">
-                                    기본 - 금액별배송비<br/>
-                                    0원
+                                            <div class="reserved-delivery">
+                                                <div class="delivery-ing">
+                                                    <span>예약 배송</span>
+                                                    <span class="date">21년 7월 23일 출고</span>
+                                                    <button class="btn-cancel">취소</button>
+                                                    <button class="btn-modify">수정</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c6">
+                                            <label for="c6"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{샤토브리앙}}</p>
+                                                    <p class="pro-set">{{세트}}:{{플래티넘B}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅁㅁㅁ}}</p>
+                                                    <p class="pro-set">{{보내는이}}:{{ㅇㅇㅇ}}</p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <span>
+                                                    <input type="number" value="00">
+                                                    <button>수량</button>
+                                                </span>
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
+                                            <ul class="product-add">
+                                                <li>
+                                                    <span class="add-name">추가 상품</span>
+                                                    <span class="add-info">{{고급 보자기 추가}}</span>
+                                                    <span class="add-count">{{N33}}개</span>
+                                                    <span class="add-price">{{252,000}}원</span>
+                                                </li>                                                
+                                            </ul>
 
-                                        <br/>
-                                        (택배)
-                                </span>
-                                </td>
-                            </tr>
-                            <!--<tr class="op">
-                                <td colspan="3">
-                                    <div>
-                                    </div>
-                                </td>
-                            </tr>-->
+                                            <div class="reserved-delivery">
+                                                <div class="delivery-ing cancel">
+                                                    <span>예약 배송</span>
+                                                    <span class="date">21년 7월 23일 출고</span>
+                                                    <button class="btn-cancel">취소</button>
+                                                    <button class="btn-modify">수정</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="cus-check">
+                                            <input type="checkbox" id="c6">
+                                            <label for="c6"></label>
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <div class="product-info">
+                                            <div class="product-name">
+                                                <img src="assets/img/etc/@thumb.png" alt="">
+                                                <div class="pro-txt-box">
+                                                    <p class="pro-tit">{{샤토브리앙}}</p>
+                                                    <p class="pro-set">{{세트}}:{{플래티넘B}}</p>
+                                                    <p class="pro-number">
+                                                        <input type="number" value="00">
+                                                        <button>수량</button>
+                                                    </p>
+                                                </div>                                                
+                                            </div>
+                                            <div class="product-count">
+                                                <div class="total-price">
+                                                    <p class="total-txt">{{193,000}}원</p>
+                                                    <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="product-price">
+                                                <b>{{168,000}}원</b>
+                                            </div>
+                                            <ul class="product-add">
+                                                <li>
+                                                    <span class="add-name">추가 상품</span>
+                                                    <span class="add-info">{{고급 보자기 변경}}</span>
+                                                    <span class="add-number">
+                                                        <input type="number" value="00">
+                                                        <button>수량</button>
+                                                    </span>
+                                                    <span class="add-price">{{252,000}}원</span>
+                                                </li>                                                
+                                                <li>
+                                                    <span class="add-name">추가 상품</span>
+                                                    <span class="add-info">{{고급 보자기 변경}}</span>
+                                                    <span class="add-number">
+                                                        <input type="number" value="00">
+                                                        <button>수량</button>
+                                                    </span>
+                                                    <span class="add-price">{{25,000}}원</span>
+                                                </li>                                                
+                                            </ul>                                            
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <p class="total-txt">{{193,000}}원</p>
+                                        <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                                    </td>
+                                </tr>
+                                <!--// for loop -->
                             </tbody>
-
                         </table>
-                        <!-- 장바구니 상품리스트 끝 -->
-
-
                     </div>
 
                     <!-- 총 주문금액 -->
@@ -1026,7 +1250,7 @@
                         </div>
                         <div class="total-price-box">
                             <p class="txt"><span>총 주문금액</span> <b>{{255,000}}원</b></p>
-                            <p class="stxt"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
+                            <p class="stxt-point"><img src="assets/img/etc/ico_m.svg" alt=""><span>적립 {{240}}원</span></p>
                         </div>
                     </div>
                     <!--// 총 주문금액 -->
