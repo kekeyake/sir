@@ -235,6 +235,9 @@
                                 }
                             }
                         }
+                        > b {
+                            display: none;
+                        }
                         .total-price {
                             display: none;
                         }                     
@@ -380,6 +383,24 @@
                                 &.btn-modify {
                                     margin-left: 12px;
                                 }
+                            }
+                        }
+                        .lettering {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            border: 1px solid #E0E0E0;
+                            box-sizing: border-box;
+                            border-radius: 2px;
+                            color:#333;
+                            font-size: 12px;
+                            font-weight: 400;
+                            padding: 0 12px;
+                            height: 32px;
+                            width: 36%;
+                            margin-bottom: 8px;
+                            @media ( max-width: 1240px) {
+                                width: 60%;
                             }
                         }
                     }
@@ -675,7 +696,7 @@
                             width: 100%;
                             display: flex;
                             justify-content: space-between;
-                            align-items: center;
+                            align-items: stretch;
                             margin-top: vw(20);
                             > span {
                                 display: inline-block;
@@ -693,7 +714,15 @@
                             .total-price {
                                 display: block;
                                 margin-left: auto;
-                            }                         
+                                padding-top: 0;
+                            }    
+                            > b {
+                                display: block;
+                                font-size: vw(14);
+                            }     
+                            &.order-last {
+                                order:5;
+                            }                
                         }
                         .product-price {
                             display: none;
@@ -809,6 +838,14 @@
                                         margin-left: vw(12);
                                     }
                                 }
+                            }
+                            .lettering {
+                                font-size: vw(12);
+                                font-weight: 400;
+                                padding: 0 vw(12);
+                                height: vw(32);
+                                width: 100%;
+                                margin-bottom: vw(8);
                             }
                         }
                     }

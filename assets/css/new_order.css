@@ -338,6 +338,10 @@
   color: #fff;
 }
 
+.order-page.new .tbl-wrap td .product-info .product-count > b {
+  display: none;
+}
+
 .order-page.new .tbl-wrap td .product-info .product-count .total-price {
   display: none;
 }
@@ -537,6 +541,35 @@
 
 .order-page.new .tbl-wrap td .product-info .reserved-delivery .delivery-ing button.btn-modify {
   margin-left: 12px;
+}
+
+.order-page.new .tbl-wrap td .product-info .reserved-delivery .lettering {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #E0E0E0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 2px;
+  color: #333;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0 12px;
+  height: 32px;
+  width: 36%;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 1240px) {
+  .order-page.new .tbl-wrap td .product-info .reserved-delivery .lettering {
+    width: 60%;
+  }
 }
 
 .order-page.new .cus-check input {
@@ -888,9 +921,9 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
     margin-top: 5.55556vw;
   }
   .order-page.new .tbl-wrap td .product-info .product-count > span {
@@ -911,6 +944,16 @@
   .order-page.new .tbl-wrap td .product-info .product-count .total-price {
     display: block;
     margin-left: auto;
+    padding-top: 0;
+  }
+  .order-page.new .tbl-wrap td .product-info .product-count > b {
+    display: block;
+    font-size: 3.88889vw;
+  }
+  .order-page.new .tbl-wrap td .product-info .product-count.order-last {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
   }
   .order-page.new .tbl-wrap td .product-info .product-price {
     display: none;
@@ -1042,6 +1085,14 @@
   }
   .order-page.new .tbl-wrap td .product-info .reserved-delivery .delivery-ing button.btn-modify {
     margin-left: 3.33333vw;
+  }
+  .order-page.new .tbl-wrap td .product-info .reserved-delivery .lettering {
+    font-size: 3.33333vw;
+    font-weight: 400;
+    padding: 0 3.33333vw;
+    height: 8.88889vw;
+    width: 100%;
+    margin-bottom: 2.22222vw;
   }
   .order-page.new .cus-check input {
     display: none;
