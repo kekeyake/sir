@@ -638,7 +638,7 @@
             overflow:hidden;
             padding:0 vw(20);
             h2 {
-                font-size: 18px;
+                font-size: vw(19); //18px;
             }
             .step-top {
                 display: flex;
@@ -650,7 +650,7 @@
                 .__btn {                
                     border: 1px solid #E0E0E0;
                     border-radius: 2px;
-                    font-size: 12px;
+                    font-size:vw(13); // 12px;
                     color:#000;
                     padding:0;
                     width: vw(78);
@@ -698,10 +698,10 @@
                         margin-top: vw(10);
                         line-height: vw(21);
                         dt {
-                            font-size: 16px;
+                            font-size:vw(17); //16px;
                         }
                         dd {
-                            font-size: 18px;
+                            font-size:vw(19); //18px;
                             margin-top: 0;
                         }
                         &:first-child {
@@ -718,12 +718,12 @@
                         justify-content: space-between;
                         align-items: center;
                         span {
-                            font-size: 16px;
+                            font-size:vw(17); //16px;
                             color: #2517B5;
                             font-weight: 700;
                         }
                         b {
-                            font-size: 18px;
+                            font-size:vw(19); //18px;
                             color:#000;
                             
                             font-weight: 900;
@@ -735,7 +735,7 @@
             .btn-wrap {
                 margin-top: 0;
                 .__buy {
-                    font-size: 16px;
+                    font-size:vw(17); //16px;
                     width: 100%;
                     height: vw(44);                
                 }
@@ -746,7 +746,7 @@
                 display: inline-flex;
                 align-items: center;
                 span {
-                    font-size: 12px;
+                    font-size: vw(13);//12px;
                     margin-top: 0;
                     margin-left: vw(7);
                 }
@@ -793,7 +793,7 @@
                         display: none;
                     }
                     .total-txt {
-                        font-size: 18px;
+                        font-size: vw(19);//18px;
                         margin-bottom: 0;
                     }
                     .product-info {
@@ -812,12 +812,12 @@
                                 margin-right: vw(16);
                             }
                             .pro-tit {
-                                font-size: 14px;
+                                font-size:vw(15); //14px;
                                 line-height: vw(20);
                                 margin-bottom: vw(8);
                             }
                             .pro-set {
-                                font-size: 12px;
+                                font-size: vw(13); //12px;
                                 line-height: vw(17);
                                 margin-bottom: vw(4);
                             }
@@ -837,7 +837,7 @@
                                     justify-content: center;
                                     align-items: center;
                                     border: 0 solid #000;
-                                    font-size: 14px;
+                                    font-size: vw(15); //14px;
                                     color:#333;
                                     width: vw(40);
                                     text-align: center;
@@ -848,7 +848,7 @@
                                     border: 1px solid #EAEAEA;
                                     border-left: 0 solid #eaeaea;
                                     background-color: #fff;
-                                    font-size: 12px;
+                                    font-size: vw(13); //12px;
                                     color:#b4b4b4;
                                     &:hover,&:focus {
                                         color:#fff;
@@ -871,10 +871,10 @@
                                 display: flex;
                                 margin-right: auto;
                                 input {
-                                    font-size: 14px;
+                                    font-size: vw(15); //14px;
                                 }
                                 button {
-                                    font-size: 12px;
+                                    font-size: vw(13); //12px;
                                 }
                             }
                             .total-price {
@@ -884,7 +884,7 @@
                             }    
                             > b {
                                 display: block;
-                                font-size: 14px;
+                                font-size:vw(15); //14px;
                             }     
                             &.order-last {
                                 order:5;
@@ -914,7 +914,7 @@
                                     margin-bottom: 0;
                                 }
                                 span {
-                                    font-size: 12px;
+                                    font-size: vw(13);//12px;
                                 }
                                 .add-name {
                                     width: auto;
@@ -950,7 +950,7 @@
                                         justify-content: center;
                                         align-items: center;
                                         border: 0 solid #000;
-                                        font-size: 14px;
+                                        font-size: vw(15);//vw(14);
                                         color:#333;
                                         width: vw(40);
                                         text-align: center;
@@ -962,7 +962,7 @@
                                         border: 1px solid #EAEAEA;
                                         border-left: 0 solid #eaeaea;
                                         background-color: #fff;
-                                        font-size: 12px;
+                                        font-size: vw(13); //12px;
                                         color:#b4b4b4;
                                         &:hover,&:focus {
                                             color:#fff;
@@ -978,14 +978,14 @@
                             width: 100%;
                             margin-top: vw(20);
                             .btn-reserved {
-                                font-size: 12px;
+                                font-size: vw(13);//12px;
                                 width: 100%;
                                 height: vw(32);
                                 padding:0 0 0 vw(12);
                                 background: #fff url(../img/etc/ico_arrow_right.svg) no-repeat right 5% top 50% / vw(5.8);
                             }
                             .delivery-ing {
-                                font-size: 12px;
+                                font-size: vw(13);//12px;
                                 width: 100%;
                                 height: vw(32);
                                 padding:0 vw(12);
@@ -999,14 +999,14 @@
                                     }
                                 }
                                 button {
-                                    font-size: 12px;
+                                    font-size: vw(13); //12px;
                                     &.btn-modify {
                                         margin-left: vw(12);
                                     }
                                 }
                             }
                             .lettering {
-                                font-size: 12px;
+                                font-size: vw(13); //12px;
                                 font-weight: 400;
                                 padding: 0 vw(12);
                                 height: vw(32);
@@ -1044,7 +1044,7 @@
                     width: vw(14);
                 }
                 span {
-                    font-size: 12px;
+                    font-size: vw(13); //12px;
                     margin-left: vw(6);
                 }
             }
