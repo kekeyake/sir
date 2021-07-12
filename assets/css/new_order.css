@@ -71,7 +71,7 @@
 
 .order-page.new .result-price .sum-box span {
   font-size: 18px;
-  margin: 0 34px;
+  margin: 0 20px;
   font-weight: 700;
 }
 
@@ -178,10 +178,6 @@
   border-color: #eaeaea;
 }
 
-.order-page.new .tbl-wrap th:first-child {
-  border-right: 1px solid #E0E0E0;
-}
-
 .order-page.new .tbl-wrap th:nth-child(2) .list-tit {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,10 +204,6 @@
   width: 39%;
 }
 
-.order-page.new .tbl-wrap th:last-child {
-  border-left: 1px solid #E0E0E0;
-}
-
 .order-page.new .tbl-wrap td {
   border-top: 1px solid #E0E0E0;
   border-bottom: 1px solid #E0E0E0;
@@ -219,13 +211,11 @@
 }
 
 .order-page.new .tbl-wrap td:first-child {
-  border-right: 1px solid #E0E0E0;
   vertical-align: top;
   text-align: center;
 }
 
 .order-page.new .tbl-wrap td:last-child {
-  border-left: 1px solid #E0E0E0;
   text-align: center;
 }
 
@@ -616,7 +606,7 @@
 }
 
 .layer-wrap .calendar-layer .view {
-  padding: 15px 34px 28px;
+  padding: 15px 20px 28px;
   margin: 0;
 }
 
@@ -630,8 +620,8 @@
   padding: 30px 0 0;
 }
 
-.calendar-layer.box .view > .btn,
-.calendar-layer.box .view > form > .btn {
+.calendar-layer.box .view .scroll-box .btn,
+.calendar-layer.box .view .scroll-box form > .btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -641,9 +631,9 @@
   padding-top: 20px;
 }
 
-.calendar-layer.box .view > .btn a,
-.calendar-layer.box .view > form > .btn a {
-  width: 217px;
+.calendar-layer.box .view .scroll-box .btn a,
+.calendar-layer.box .view .scroll-box form > .btn a {
+  width: 235px;
   height: 47px;
   line-height: 45px;
   border: 1px solid #B4B4B4;
@@ -651,15 +641,15 @@
   color: #000;
 }
 
-.calendar-layer.box .view > .btn a.point2,
-.calendar-layer.box .view > form > .btn a.point2 {
+.calendar-layer.box .view .scroll-box .btn a.point2,
+.calendar-layer.box .view .scroll-box form > .btn a.point2 {
   border-color: #2517B5;
   background: #2517B5;
   color: #fff;
 }
 
-.calendar-layer.box .view > .btn a.point2:disabled,
-.calendar-layer.box .view > form > .btn a.point2:disabled {
+.calendar-layer.box .view .scroll-box .btn a.point2:disabled,
+.calendar-layer.box .view .scroll-box form > .btn a.point2:disabled {
   border-color: #b4b4b4;
   background: #b4b4b4;
   color: #fff;
@@ -680,6 +670,7 @@
 
 .calendar-layer .detail-date-picker .ui-datepicker .ui-datepicker-title {
   font-size: 16px;
+  font-weight: 400;
 }
 
 .calendar-layer .ui-widget-header a {
@@ -723,6 +714,12 @@
 .calendar-layer .detail-date-picker .ui-datepicker-calendar .ui-state-active {
   color: #fff;
   background-color: #2517B5;
+}
+
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  text-decoration: line-through;
 }
 
 .calendar-layer .ui-datepicker td {
@@ -1049,7 +1046,6 @@
   .order-page.new .tbl-wrap td .product-info .product-name .pro-tit {
     font-size: 3.88889vw;
     line-height: 5.55556vw;
-    margin-top: 1.66667vw;
     margin-bottom: 2.22222vw;
   }
   .order-page.new .tbl-wrap td .product-info .product-name .pro-set {
@@ -1324,6 +1320,9 @@
   #reservationDateOptionLayer {
     top: 119px;
   }
+  #reservationDateOptionLayer .option-layer .scroll-box {
+    height: calc(100% - 140px);
+  }
   .layer-wrap .calendar-layer {
     width: 100%;
     max-width: 100%;
@@ -1339,7 +1338,7 @@
     width: 100%;
   }
   .layer-wrap .calendar-layer .view {
-    padding: 15px 34px 28px;
+    padding: 15px 20px 28px;
     margin: 0;
     width: 100%;
   }
@@ -1351,8 +1350,8 @@
   #reservationDateOptionLayer .calendar-layer .scroll-box {
     padding: 22px 0 0;
   }
-  .calendar-layer.box .view > .btn,
-  .calendar-layer.box .view > form > .btn {
+  .calendar-layer.box .view .scroll-box .btn,
+  .calendar-layer.box .view .scroll-box form > .btn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1361,8 +1360,8 @@
             justify-content: space-between;
     padding-top: 20px;
   }
-  .calendar-layer.box .view > .btn a,
-  .calendar-layer.box .view > form > .btn a {
+  .calendar-layer.box .view .scroll-box .btn a,
+  .calendar-layer.box .view .scroll-box form > .btn a {
     width: 41.66667vw;
     height: 44px;
     line-height: 42px;
@@ -1370,14 +1369,14 @@
     font-size: 16px;
     color: #000;
   }
-  .calendar-layer.box .view > .btn a.point2,
-  .calendar-layer.box .view > form > .btn a.point2 {
+  .calendar-layer.box .view .scroll-box .btn a.point2,
+  .calendar-layer.box .view .scroll-box form > .btn a.point2 {
     border-color: #2517B5;
     background: #2517B5;
     color: #fff;
   }
-  .calendar-layer.box .view > .btn a.point2:disabled,
-  .calendar-layer.box .view > form > .btn a.point2:disabled {
+  .calendar-layer.box .view .scroll-box .btn a.point2:disabled,
+  .calendar-layer.box .view .scroll-box form > .btn a.point2:disabled {
     border-color: #b4b4b4;
     background: #b4b4b4;
     color: #fff;
@@ -1388,7 +1387,7 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-radius: 2px;
-    padding-top: 24px;
+    padding-top: 12px;
   }
   .calendar-layer .detail-date-picker .date-picker-wrapper {
     max-width: 100%;

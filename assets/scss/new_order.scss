@@ -45,7 +45,7 @@
                 align-items: center;
                 span {
                     font-size: 18px;
-                    margin:0 34px;
+                    margin:0 20px;
                     font-weight: 700;
                 }
                 dl {
@@ -120,9 +120,9 @@
                 label {
                     border-color: #eaeaea;
                 }    
-                &:first-child {
-                    border-right: 1px solid #E0E0E0;
-                }
+                // &:first-child {
+                //     border-right: 1px solid #E0E0E0;
+                // }
                 &:nth-child(2) {
                     .list-tit {
                         display: flex;
@@ -142,21 +142,21 @@
                         }
                     }                    
                 }
-                &:last-child {
-                    border-left: 1px solid #E0E0E0;
-                }
+                // &:last-child {
+                //     border-left: 1px solid #E0E0E0;
+                // }
             }
             td {
                 border-top: 1px solid #E0E0E0;
                 border-bottom: 1px solid #E0E0E0;
                 padding:30px 0;
                 &:first-child {
-                    border-right: 1px solid #E0E0E0;
+                    // border-right: 1px solid #E0E0E0;
                     vertical-align: top;
                     text-align: center;
                 }
                 &:last-child {
-                    border-left: 1px solid #E0E0E0;
+                    // border-left: 1px solid #E0E0E0;
                     text-align: center;
                 }
                 .total-txt {
@@ -443,7 +443,7 @@
     border-radius: 4px;
     overflow: hidden;
     .view {
-        padding: 15px 34px 28px;
+        padding: 15px 20px 28px;
         margin:0;
         h2 {
             text-align: center;
@@ -456,29 +456,29 @@
 #reservationDateOptionLayer .calendar-layer .scroll-box {
     padding: 30px 0 0;
 }
-.calendar-layer.box .view > .btn, 
-.calendar-layer.box .view > form > .btn {
+.calendar-layer.box .view .scroll-box .btn, 
+.calendar-layer.box .view .scroll-box form > .btn {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
 }
-.calendar-layer.box .view > .btn a,
-.calendar-layer.box .view > form > .btn a {
-    width: 217px;
+.calendar-layer.box .view .scroll-box .btn a,
+.calendar-layer.box .view .scroll-box form > .btn a {
+    width: 235px;
     height: 47px;
     line-height: 45px;
     border: 1px solid #B4B4B4;
     font-size: 16px;
     color:#000;
 }
-.calendar-layer.box .view > .btn a.point2,
-.calendar-layer.box .view > form > .btn a.point2 {
+.calendar-layer.box .view .scroll-box .btn a.point2,
+.calendar-layer.box .view .scroll-box form > .btn a.point2 {
     border-color: #2517B5;
     background: #2517B5;
     color:#fff;
 }
-.calendar-layer.box .view > .btn a.point2:disabled,
-.calendar-layer.box .view > form > .btn a.point2:disabled {
+.calendar-layer.box .view .scroll-box .btn a.point2:disabled,
+.calendar-layer.box .view .scroll-box form > .btn a.point2:disabled {
     border-color: #b4b4b4;
     background: #b4b4b4;
     color:#fff;
@@ -495,6 +495,7 @@
 }
 .calendar-layer .detail-date-picker .ui-datepicker .ui-datepicker-title {
     font-size: 16px;
+    font-weight: 400;
 }
 .calendar-layer .ui-widget-header a {
     border: 1px solid #E0E0E0;
@@ -530,6 +531,11 @@
 .calendar-layer .detail-date-picker .ui-datepicker-calendar .ui-state-active {
     color:#fff;
     background-color: #2517B5;
+}
+.ui-state-disabled, 
+.ui-widget-content .ui-state-disabled, 
+.ui-widget-header .ui-state-disabled {
+    text-decoration: line-through;
 }
 .calendar-layer .ui-datepicker td {
     padding:0.5em;
@@ -786,7 +792,6 @@
                             .pro-tit {
                                 font-size: vw(14);
                                 line-height: vw(20);
-                                margin-top: vw(6);
                                 margin-bottom: vw(8);
                             }
                             .pro-set {
@@ -1026,6 +1031,9 @@
     #reservationDateOptionLayer {
         top:119px;
     }
+    #reservationDateOptionLayer .option-layer .scroll-box {
+        height: calc(100% - 140px);
+    }
     .layer-wrap .calendar-layer {
         width: 100%;
         max-width: 100%;
@@ -1038,7 +1046,7 @@
             width: 100%;
         }
         .view {
-            padding: 15px 34px 28px;
+            padding: 15px 20px 28px;
             margin:0;
             width: 100%;        
             h2 {
@@ -1052,14 +1060,14 @@
     #reservationDateOptionLayer .calendar-layer .scroll-box {
         padding: 22px 0 0;
     }
-    .calendar-layer.box .view > .btn, 
-    .calendar-layer.box .view > form > .btn {
+    .calendar-layer.box .view .scroll-box .btn, 
+    .calendar-layer.box .view .scroll-box form > .btn {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
     }
-    .calendar-layer.box .view > .btn a,
-    .calendar-layer.box .view > form > .btn a {
+    .calendar-layer.box .view .scroll-box .btn a,
+    .calendar-layer.box .view .scroll-box form > .btn a {
         width: vw(150);
         height: 44px;
         line-height: 42px;
@@ -1067,14 +1075,14 @@
         font-size: 16px;
         color:#000;
     }
-    .calendar-layer.box .view > .btn a.point2,
-    .calendar-layer.box .view > form > .btn a.point2 {
+    .calendar-layer.box .view .scroll-box .btn a.point2,
+    .calendar-layer.box .view .scroll-box form > .btn a.point2 {
         border-color: #2517B5;
         background: #2517B5;
         color:#fff;
     }
-    .calendar-layer.box .view > .btn a.point2:disabled,
-    .calendar-layer.box .view > form > .btn a.point2:disabled {
+    .calendar-layer.box .view .scroll-box .btn a.point2:disabled,
+    .calendar-layer.box .view .scroll-box form > .btn a.point2:disabled {
         border-color: #b4b4b4;
         background: #b4b4b4;
         color:#fff;
@@ -1084,7 +1092,7 @@
         border: 1px solid #E0E0E0;
         box-sizing: border-box;
         border-radius: 2px;
-        padding-top: 24px;
+        padding-top: 12px;
     }
     .calendar-layer .detail-date-picker .date-picker-wrapper {
         max-width: 100%;
